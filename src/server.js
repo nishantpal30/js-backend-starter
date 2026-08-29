@@ -8,8 +8,6 @@ const app = express();
 
 app.use(express.json());
 app.use(cookieParser());
- 
-
 
 // middleware
 app.listen(serverConfig.PORT, async ()=>{
