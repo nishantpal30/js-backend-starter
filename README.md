@@ -29,6 +29,17 @@ PORT=3000
 DATABASE_URL=your_database_url
 JWT_SECRET=your_jwt_secret
 ```
+## 🧹 Remove `.gitkeep` Files (Optional)
+
+This starter repository uses `.gitkeep` files to preserve the folder structure.
+
+After cloning the repository, you can remove all `.gitkeep` files by running:
+
+```bash
+find . -type f -name ".gitkeep" -delete
+```
+
+> Run this command from the root directory of the project.
 
 ### 4. Start the project
 
