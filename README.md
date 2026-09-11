@@ -48,6 +48,26 @@ npm run dev
 ```
 
 ---
+### Remove Existing Git Repository
+
+If you cloned an existing repository and want to push the project to your own GitHub repository, remove the existing Git history:
+
+```powershell
+Remove-Item -Recurse -Force .git
+```
+
+> **Note:** This only removes the `.git` folder. It does not delete `.gitignore`, `.gitkeep`, or any project files.
+
+After removing `.git`, initialize your own repository:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin YOUR_GITHUB_REPOSITORY_URL
+git push -u origin main
+```
 
 ## 📂 Project Structure
 
