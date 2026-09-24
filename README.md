@@ -52,9 +52,12 @@ npm run dev
 
 If you cloned an existing repository and want to push the project to your own GitHub repository, remove the existing Git history:
 
-```powershell
-Remove-Item -Recurse -Force .git
-```
+| Terminal                 | Command                            |
+| ------------------------ | ---------------------------------- |
+| **Git Bash**             | `rm -rf .git`                      |
+| **PowerShell**           | `Remove-Item -Recurse -Force .git` |
+| **Command Prompt (CMD)** | `rmdir /s /q .git`                 |
+
 
 > **Note:** This only removes the `.git` folder. It does not delete `.gitignore`, `.gitkeep`, or any project files.
 
